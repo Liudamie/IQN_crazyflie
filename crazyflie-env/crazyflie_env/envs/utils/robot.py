@@ -9,8 +9,8 @@ from crazyflie_env.envs.utils.util import get_ranger_reflection
 
 class Robot():
     def __init__(self, partial_observation=True):
-        self.radius = 0.05
-        self.v_pref = 1.0 # max possible velocity
+        self.radius = 0.1
+        self.v_pref = 0.5 # max possible velocity
         self.time_step = None
         self.fov = 2 * np.pi
         self.num_rangers = 4
